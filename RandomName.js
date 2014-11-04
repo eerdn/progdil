@@ -4,8 +4,6 @@
 JavaScript Test
 </title>
 </head>
-<body>
-<pre>
 <script language="Javascript">
  
 var words =
@@ -116,17 +114,15 @@ function Generator(count, language)
  
 function RandomName(count, language)
 {
+	var count = prompt("Kac Kelime Uretilecek :","");
 	var pairList = Generator(count, language);
 	for (i = 0; i < pairList.length; i++)
 	{
 		document.writeln((i+1) + " : " + pairList[i]);
 	}
 }
- 
-// Ornek
-RandomName(5, "TR");
- 
 </script>
-</pre>
+<body>
+<button onclick = "RandomName(0,'TR' )"> Kelimeler </button> 
 </body>
 </html>
