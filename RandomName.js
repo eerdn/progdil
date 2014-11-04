@@ -118,7 +118,7 @@ function RandomName(count, language)
 	var pairList = Generator(count, language);
 	for (i = 0; i < pairList.length; i++)
 	{
-		document.writeln((i+1) + " : " + pairList[i]);
+		document.writeln((i+1) + " : " + pairList[i] + "<br>" );
 	}
 }
 </script>
