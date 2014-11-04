@@ -4,6 +4,7 @@
 function ReplaceUnderscoreWithSpace(string)
 { 
     var i,j,s;  
+    var string = prompt("String Değerini Giriniz :","");
     var array = string.split("");
 
     for (i = 0 ; i <= array.length-1 ; i++) 
@@ -24,8 +25,9 @@ function ReplaceUnderscoreWithSpace(string)
     document.write(array.join(""));
 }
 
-ReplaceUnderscoreWithSpace('__foo____bar__');
+ 
 </script>
 <body>
+	<button onclick="ReplaceUnderscoreWithSpace()">Tıklayınız</button>
 </body>
 </html>
