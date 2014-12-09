@@ -3,29 +3,27 @@
 
 function ReplaceUnderscoreWithSpace(string)
 { 
-    var i,j,s;  
-    var string = prompt("String Değerini Giriniz :","");
-    var array = string.split("");
-
-    for (i = 0 ; i <= array.length-1 ; i++) 
+    var s = prompt("String Değerini Girin :","");
+    var a = string.split("");
+    
+    for (var i = 0 ; i <= a.length-1 ; i++) 
     {
-          if (array[i] != "_")
+          if (a[i] != "_")
 	            break;			 
     }
-    for (var j = array.length-1 ; j >= 0 ; j--) 
+    for (var j = a.length-1 ; j >= 0 ; j--) 
     {
-         if (array[j] != "_")
+         if (a[j] != "_")
 	            break; 
 	  }
-    for (s = i ; s <= j ; s++)		 
+    for (k = i ; k <= j ; k++)		 
     {
-          if (array [s] == "_")   	
-	             array[s] = array[s].replace('_',' ');
+          if (a[k] == "_")   	
+	             a [k] = a[k].replace('_',' ');
     }
-    document.write(array.join(""));
+    document.write(a.join(""));
 }
 
- 
 </script>
 <body>
 	<button onclick="ReplaceUnderscoreWithSpace()">Tıklayınız</button>
