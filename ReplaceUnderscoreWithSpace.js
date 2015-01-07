@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html><script>
 
-function ReplaceUnderscoreWithSpace(string)
+function ReplaceUnderscoreWithSpace()
 { 
     var s = prompt("String Değerini Girin :","");
-    var a = string.split("");
+    var a = s.split("");
     
     for (var i = 0 ; i <= a.length-1 ; i++) 
     {
